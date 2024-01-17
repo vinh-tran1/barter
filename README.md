@@ -6,19 +6,13 @@ By Vinh Tran
 
 This is an app designed to be a bartering marketplace. Users can join groups (by location, school, items, etc.) to trade with others. The goal is to give a sense of relative value over monetary and more fluid transactions.
 
-## Tech Stack
+## Tech Stack: MERN
 
-### Frontend
-- React
-- Redux
-- Tailwind CSS
+### Frontend: React, Redux, Tailwind CSS
 
-### Backend
-- Node
-- Express
-- MongoDB
+### Backend: Node, Express, MongoDB
 
-## Code Stucture
+## Folder Stucture
 
 - `client`: frontend
     - `public`
@@ -45,7 +39,7 @@ npm start
 
 #### Backend
 ```bash
-# navigate to frontend
+# navigate to backend
 cd server
 npm install
 npm start
