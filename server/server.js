@@ -4,7 +4,7 @@ import cors from "cors";
 import dotenv from 'dotenv';
 dotenv.config();
 
-import userRouter from "./routes/users.js";
+import userRouter from "./routes/user.route.js";
 // import itemRouter from "./routes/items.js";
 
 const app = express();
