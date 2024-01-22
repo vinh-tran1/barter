@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
+const Schema = mongoose.Schema;
 
-const itemSchema = new mongoose.Schema({
+const itemSchema = new Schema({
     itemName: {
         type: String,
         required: true,
@@ -16,5 +17,5 @@ const itemSchema = new mongoose.Schema({
     timestamps: true
 });
 
-const Item = mongoose.model("user", itemSchema);
+const Item = mongoose.model("Item", itemSchema);
 export default Item;

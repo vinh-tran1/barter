@@ -5,7 +5,7 @@ import {
     getUsers, 
     getUserById, 
     createUser, 
-    udpateUser, 
+    updateUser, 
     deleteUser 
 } from "../controllers/user.controller.js";
 
@@ -27,7 +27,7 @@ router.post('/', createUser);
 // @desc    update specific user information
 // @route   PUT /user/:id
 // @access  private
-router.put('/:id', udpateUser);
+router.put('/:id', updateUser);
 
 // @desc    delete specific user
 // @route   DELETE /user/:id
@@ -38,7 +38,7 @@ router.delete('/:id', deleteUser);
 
     router.route('/).get(getUsers).post(createUser);
     router.route('/:id).get(getUserById).put(updateUser).delete(deleteUser);
-    
+
 */
 
 export default router;

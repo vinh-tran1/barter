@@ -12,13 +12,16 @@ const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(cors());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // routes
-app.use("/user", userRouter);
+app.use("/users", userRouter);
+// app.use("/items", itemRouter);
+// app.use("/groups", groupRouter);
 
 // connect to db & server
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI, { dbName: "barter" })
     .then(() => {
         app.listen(PORT, () => {
             console.log("✅ connected to db & listening on port", PORT);
